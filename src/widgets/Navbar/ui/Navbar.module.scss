@@ -1,0 +1,5 @@
+@use '@/app/styles/variables/global';
+
+.Navbar {
+  font: global.$font-xl;
+}
