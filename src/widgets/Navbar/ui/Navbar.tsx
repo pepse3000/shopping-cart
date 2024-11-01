@@ -13,7 +13,7 @@ export const Navbar = (props: NavbarProps) => {
 
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
-            test
+
         </div>
     )
 }

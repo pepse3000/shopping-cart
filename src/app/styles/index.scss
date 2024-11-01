@@ -1,6 +1,8 @@
 @use 'reset';
+@use 'variables/mixins';
 @use 'variables/global';
 
 .app {
-
+  @include mixins.default-app;
+  min-height: 100vh;
 }
