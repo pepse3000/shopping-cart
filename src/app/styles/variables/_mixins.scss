@@ -1,0 +1,6 @@
+@use 'variables';
+
+@mixin default-app {
+  background: variables.$app-background;
+  color: variables.$app-color;
+}
