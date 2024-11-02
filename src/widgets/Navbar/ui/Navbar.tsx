@@ -14,8 +14,15 @@ export const Navbar = (props: NavbarProps) => {
     } = props;
 
     return (
-        <div className={classNames(cls.Navbar, {}, [className])}>
-            <Link to={RoutePath.main}>main</Link>
+        <div className={classNames(cls.Navbar, {}, [className, "page"])}>
+            <span className={cls.shopName}>Exclusive</span>
+            <div className={cls.links}>
+                <Link to={RoutePath.main}>Home</Link>
+                <Link to={RoutePath.contact}>Contact</Link>
+                <Link to={RoutePath.about}>About</Link>
+                <Link to={RoutePath.sign_up}>Sign Up</Link>
+            </div>
+            <span>Cart</span>
         </div>
     )
 }
