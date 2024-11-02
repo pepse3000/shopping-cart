@@ -1,0 +1,37 @@
+@use '@/app/styles/variables/global';
+
+.FlashSales {
+  margin-top: 7rem;
+  font: global.$font-m;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+
+  .head {
+    font-size: 16px;
+    margin-left: 1rem;
+    font-weight: 600;
+    color: global.$red;
+  }
+
+  .box {
+    width: 15px;
+    height: 35px;
+    border-radius: 5px;
+    background: global.$red;
+  }
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  font-size: global.$font-size-l;
+
+  p {
+    font-weight: 600;
+  }
+}

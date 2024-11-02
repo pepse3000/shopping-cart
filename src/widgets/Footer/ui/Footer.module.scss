@@ -1,0 +1,61 @@
+@use '@/app/styles/variables/variables';
+@use '@/app/styles/variables/global';
+
+.Footer {
+  background: variables.$inverted-app-background;
+  color: variables.$inverted-app-color;
+  font: global.$font-s;
+  height: global.$footer-height;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.head {
+  font: global.$font-m;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 12rem;
+  font-size: 14px;
+
+  p {
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .head:hover {
+    text-decoration: none;
+    opacity: 1;
+    cursor: default;
+  }
+}
+
+.copyright {
+  border-top: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  padding-top: 20px;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

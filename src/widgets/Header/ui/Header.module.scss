@@ -1,0 +1,14 @@
+@use '@/app/styles/variables/variables';
+@use '@/app/styles/variables/global';
+
+.Header {
+  background: variables.$inverted-app-background;
+  color: variables.$inverted-app-color;
+  height: global.$header-height;
+  font: global.$font-s;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

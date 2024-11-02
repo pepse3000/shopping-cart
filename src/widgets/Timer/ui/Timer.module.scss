@@ -1,0 +1,35 @@
+@use '@/app/styles/variables/global';
+
+.Timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+  font: global.$font-m;
+  position: relative;
+}
+
+.dots {
+  font: global.$font-l;
+  color: global.$red;
+  font-weight: 500;
+  position: relative;
+  top: .7rem;
+}
+
+.timeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.8rem;
+  }
+
+  p.time {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
