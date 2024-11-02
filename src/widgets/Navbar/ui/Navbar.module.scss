@@ -1,5 +1,20 @@
 @use '@/app/styles/variables/global';
 
 .Navbar {
-  font: global.$font-xl;
+  font: global.$font-s;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.shopName {
+  font: global.$font-l;
 }
