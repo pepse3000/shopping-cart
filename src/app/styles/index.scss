@@ -2,7 +2,15 @@
 @use 'variables/mixins';
 @use 'variables/global';
 
-.app {
+body {
   @include mixins.default-app;
+}
+
+.app {
   min-height: 100vh;
+}
+
+.page-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
 }
