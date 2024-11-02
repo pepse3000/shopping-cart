@@ -1,3 +1,17 @@
 .MainPage {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.navWithSlide {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    margin-top: 20px;
+    width: 70%;
+  }
 }
