@@ -22,4 +22,10 @@ $font-weight-xl: 700;
 $font-xl: #{$font-weight-xl} #{$font-size-xl} / #{$font-line-xl} #{$inter-font-family};
 
 // Colors
-$border-gray: #bbbbbb;
+$gray: #bbbbbb;
+$red: #DB4444;
+
+// sizes
+$navbar-height: 70px;
+$header-height: 30px;
+$footer-height: 400px;

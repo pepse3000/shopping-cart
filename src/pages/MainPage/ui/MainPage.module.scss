@@ -1,9 +1,11 @@
+@use '@/app/styles/variables/global';
+
 .MainPage {
   padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  min-height: calc(100vh - #{global.$navbar-height} - #{global.$footer-height} - #{global.$header-height});
 }
 
 .navWithSlide {
