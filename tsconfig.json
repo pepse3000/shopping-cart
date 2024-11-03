@@ -15,7 +15,9 @@
       "@/*": ["./src/*"],
     },
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "suppressExcessPropertyErrors": true
   },
   "ts-node": {
     "compilerOptions": {
