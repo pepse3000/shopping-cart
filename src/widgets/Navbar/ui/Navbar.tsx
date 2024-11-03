@@ -4,6 +4,9 @@ import {classNames} from "shared/lib/classNames/classNames";
 import {AppLink, AppLinkThemes} from "shared/ui/AppLink/AppLink";
 import {RoutePath} from "shared/config/routeConfig/routeConfig";
 
+import cart from "shared/assets/icons/cart.svg"
+import wishlist from "shared/assets/icons/wishlist.svg"
+
 interface NavbarProps {
     className?: string;
 }
@@ -22,7 +25,14 @@ export const Navbar = (props: NavbarProps) => {
                 <AppLink to={RoutePath.about} theme={AppLinkThemes.HEADERS}>About</AppLink>
                 <AppLink to={RoutePath.sign_up} theme={AppLinkThemes.HEADERS}>Sign Up</AppLink>
             </div>
-            <span>Cart</span>
+            <div className={cls.rightSide}>
+                <AppLink to={RoutePath.wishlist} className={cls.icon}>
+                    <img src={wishlist} alt="wishlist"/>
+                </AppLink>
+                <AppLink to={RoutePath.cart} className={cls.icon}>
+                    <img src={cart} alt="cart"/>
+                </AppLink>
+            </div>
         </div>
     )
 }

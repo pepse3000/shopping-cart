@@ -18,3 +18,19 @@
 .shopName {
   font: global.$font-l;
 }
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon img {
+  opacity: 0.7;
+  height: 26px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
