@@ -6,6 +6,7 @@ import {Link, LinkProps} from "react-router-dom";
 export enum AppLinkThemes {
     HEADERS = "headers",
     NAVS = "navs",
+    CLEAR = "",
     BACKGROUND = "background"
 }
 

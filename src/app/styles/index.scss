@@ -12,5 +12,12 @@ body {
 
 .page-wrapper {
   max-width: 1080px;
+  overflow: hidden;
   margin: 0 auto;
+}
+
+.line {
+  margin: 50px 0;
+  height: 1px;
+  background: global.$gray;
 }

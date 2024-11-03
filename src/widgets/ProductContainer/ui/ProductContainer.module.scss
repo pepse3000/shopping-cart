@@ -1,0 +1,11 @@
+.productList {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+  scroll-behavior: smooth;
+}
+
+.productList::-webkit-scrollbar {
+  display: none;
+}
