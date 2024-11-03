@@ -1,0 +1,18 @@
+@use '@/app/styles/variables/global';
+@use '@/app/styles/variables/variables';
+
+.Discount {
+  background: global.$red;
+  color: variables.$inverted-app-color;
+  width: 3.2rem;
+  border-radius: 5px;
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  font: global.$font-s;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

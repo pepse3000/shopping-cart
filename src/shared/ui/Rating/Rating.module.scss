@@ -1,0 +1,13 @@
+.starRating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #707070;
+}
+
+.rating {
+  position: relative;
+  font-size: 14px;
+  margin-left: 5px;
+  top: -1px;
+}

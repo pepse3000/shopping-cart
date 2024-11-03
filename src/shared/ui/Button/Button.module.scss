@@ -1,0 +1,67 @@
+@use '@/app/styles/variables/variables';
+@use '@/app/styles/variables/global';
+
+.Button {
+
+}
+
+.blackSquare {
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  padding: .5rem;
+  background: variables.$inverted-app-background;
+  color: variables.$inverted-app-color;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+.redSquare {
+  background: global.$red;
+  color: variables.$inverted-app-color;
+}
+
+.wishlist {
+  width: 2rem;
+  height: 2rem;
+
+  border: 0;
+  border-radius: 20px;
+  opacity: 1;
+  background-image: url("src/shared/assets/icons/heart.svg");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.round {
+  border-radius: 50px;
+}
+
+.scrollLeft, .scrollRight {
+  width: 40px;
+  height: 40px;
+  border: 0;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.scrollLeft {
+  background: global.$gray url("src/shared/assets/icons/leftArrow.svg") no-repeat center;
+}
+
+.scrollRight {
+  background: global.$gray url("src/shared/assets/icons/rightArrow.svg") no-repeat center;
+  background-size: 52%;
+}
