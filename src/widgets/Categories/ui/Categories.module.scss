@@ -1,0 +1,37 @@
+@use '@/app/styles/variables/global';
+@use '@/app/styles/variables/variables';
+
+.Categories {
+  margin-top: 2rem;
+  font: global.$font-m;
+}
+
+.categoryList {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  flex: 1;
+  color: variables.$app-color;
+
+  height: 10rem;
+  border: 1px solid global.$gray;
+
+  &:hover {
+    background: global.$red;
+    color: variables.$inverted-app-color;
+    border: 1px solid variables.$inverted-app-color;
+
+    img {
+      filter: invert(1);
+    }
+  }
+}
