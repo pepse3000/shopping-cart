@@ -1,0 +1,51 @@
+@use '@/app/styles/variables/global';
+
+.Product {
+  font: global.$font-s;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.productItem {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+  &:hover {
+    .cartBtn {
+      transform: translateY(0);
+    }
+  }
+}
+
+.productDesc {
+  margin-top: .5rem;
+}
+
+.cartBtn {
+  width: 100%;
+  position: absolute;
+  transform: translateY(3rem);
+  transition: transform .2s;
+}
+
+.wishBtn {
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+}
+
+.red {
+  color: global.$red;
+  margin-right: 1rem;
+}
+
+.crossed {
+  color: #626262;
+  text-decoration: line-through;
+}
+
