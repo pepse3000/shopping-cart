@@ -1,3 +1,36 @@
+@use '@/app/styles/variables/global';
+@use '@/app/styles/variables/variables';
+
 .BestSelling {
-  
+  font: global.$font-m;
+
+  img {
+    margin: 2rem 0;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
+
+.head {
+  font: global.$font-l;
+  font-size: global.$font-size-l;
+  margin-bottom: .7rem;
+
+  p {
+    font-weight: 600;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-size: 14px;
+}
+
