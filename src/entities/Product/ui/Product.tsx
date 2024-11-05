@@ -23,6 +23,9 @@ export const Product: FC<ProductProps> = (props) => {
         discount
     } = props;
 
+    const regex = /https?:\/\/[^\s"']+\.jpeg/
+    const imgUrl = item.images[0].match(regex);
+
     return (
         <div className={classNames(cls.Product, {}, [className])}>
             <div
@@ -57,7 +60,7 @@ export const Product: FC<ProductProps> = (props) => {
                 >
                     ${Number(discount ? item.price - (item.price * discount / 100) : item.price).toFixed(2)}
                 </span>
-                {discount ? <span className={cls.crossed}>${item.price}</span> : null}
+                {discount && <span className={cls.crossed}>${item.price}</span>}
                 <Rating />
             </div>
         </div>

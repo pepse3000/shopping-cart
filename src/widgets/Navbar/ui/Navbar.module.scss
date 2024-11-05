@@ -1,4 +1,5 @@
 @use '@/app/styles/variables/global';
+@use '@/app/styles/variables/variables';
 
 .Navbar {
   font: global.$font-s;
@@ -16,6 +17,7 @@
 }
 
 .shopName {
+  color: variables.$app-color;
   font: global.$font-l;
 }
 

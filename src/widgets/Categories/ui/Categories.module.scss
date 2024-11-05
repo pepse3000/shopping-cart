@@ -2,12 +2,11 @@
 @use '@/app/styles/variables/variables';
 
 .Categories {
-  margin-top: 2rem;
   font: global.$font-m;
 }
 
 .categoryList {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   display: flex;
   gap: 2rem;
 }

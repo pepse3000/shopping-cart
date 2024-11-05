@@ -1,5 +1,5 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import {ICategory, IItem} from "entities/Product/model/types/itemInterface";
+import {IItem} from "entities/Product/model/types/itemInterface";
 
 export const productAPI = createApi({
     reducerPath: 'productAPI',

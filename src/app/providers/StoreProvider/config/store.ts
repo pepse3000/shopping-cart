@@ -1,6 +1,6 @@
 import {StateInterface} from "app/providers/StoreProvider/config/StateInterface";
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
-import {productAPI} from "shared/api/productService";
+import {productAPI} from "entities/Product/model/slices/productService";
 
 const rootReducer = combineReducers({
     [productAPI.reducerPath]: productAPI.reducer

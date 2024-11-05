@@ -18,7 +18,7 @@ export const Navbar = (props: NavbarProps) => {
 
     return (
         <div className={classNames(cls.Navbar, {}, [className, "page"])}>
-            <span className={cls.shopName}>Exclusive</span>
+            <AppLink to={RoutePath.main} className={cls.shopName}>Exclusive</AppLink>
             <div className={cls.links}>
                 <AppLink to={RoutePath.main} theme={AppLinkThemes.HEADERS}>Home</AppLink>
                 <AppLink to={RoutePath.contact} theme={AppLinkThemes.HEADERS}>Contact</AppLink>

@@ -5,6 +5,7 @@ import slide1 from 'shared/assets/slides/slide1.png'
 import {FC} from "react";
 import {FlashSales} from "widgets/FlashSales";
 import {Categories} from "widgets/Categories";
+import {BestSelling} from "widgets/BestSelling";
 
 interface MainPageProps {
     className?: string;
@@ -19,7 +20,7 @@ const MainPage: FC = ({className}: MainPageProps) => {
             </div>
             <FlashSales />
             <Categories />
-            {/*<PageBestSelling />*/}
+            <BestSelling />
         </div>
     )
 }
