@@ -1,0 +1,1 @@
+export {WishPage} from './ui/WishPage';

@@ -1,0 +1,11 @@
+@use '@/app/styles/variables/global';
+@use '@/app/styles/variables/mixins';
+
+.WishPage {
+  @include mixins.default-page;
+}
+
+.wishpage__list {
+  display: flex;
+  gap: 1rem;
+}
