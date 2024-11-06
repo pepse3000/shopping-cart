@@ -1,5 +1,7 @@
 import {RouteProps} from "react-router-dom";
 import {MainPageAsync} from "pages/MainPage";
+import {ErrorPage} from "pages/ErrorPage";
+import {WishPage} from "pages/WishPage";
 
 export enum AppRoutes {
     MAIN = 'main',
@@ -10,7 +12,7 @@ export enum AppRoutes {
     // CHECK_OUT = 'checkout',
     // SHOP = 'shop',
     WISH_LIST = 'wishlist',
-    // NOT_FOUND = 'not_found',
+    NOT_FOUND = 'not_found',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -20,6 +22,7 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.SIGN_UP]: '/sign_up',
     [AppRoutes.CART]: '/cart',
     [AppRoutes.WISH_LIST]: '/wishlist',
+    [AppRoutes.NOT_FOUND]: '*',
     // [AppRoutes.CHECK_OUT]: '/checkout',
     // [AppRoutes.SHOP]: '/shop',
     // [AppRoutes.NOT_FOUND]: '/not_found',
@@ -48,7 +51,10 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     },
     [AppRoutes.WISH_LIST]: {
         path: RoutePath.wishlist,
-        element: <h1>Wishlist</h1>
-    }
-
+        element: <WishPage />
+    },
+    [AppRoutes.NOT_FOUND]: {
+        path: RoutePath.not_found,
+        element: <ErrorPage />
+}
 }

@@ -1,11 +1,12 @@
 @use '@/app/styles/variables/global';
+@use '@/app/styles/variables/mixins';
 
 .MainPage {
   padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: calc(100vh - #{global.$navbar-height} - #{global.$footer-height} - #{global.$header-height});
+  min-height: global.$min-page-height;
 }
 
 .navWithSlide {

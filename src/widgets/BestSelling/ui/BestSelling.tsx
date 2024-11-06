@@ -6,6 +6,7 @@ import {Title} from "shared/ui/Title/Title";
 import {RoutePath} from "shared/config/routeConfig/routeConfig";
 import {AppLink, AppLinkThemes} from "shared/ui/AppLink/AppLink";
 import slide from 'shared/assets/slides/slide2.jpg';
+import slide2 from 'shared/assets/slides/slide3.jpg';
 
 interface BestSellingProps {
     className?: string;
@@ -36,6 +37,7 @@ export const BestSelling = ({className}: BestSellingProps) => {
             />
 
             <img src={slide} alt="Slide"/>
+            <img src={slide2} alt="Slide"/>
         </div>
     )
 }
