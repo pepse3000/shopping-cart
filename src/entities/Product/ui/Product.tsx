@@ -1,15 +1,15 @@
 import {classNames} from "shared/lib/classNames/classNames";
 import cls from "./Product.module.scss";
 import {FC} from "react";
-import {Button, ButtonThemes, ButtonTypes} from "shared/ui/Button/Button";
 import {IItem} from "../model/types/itemInterface";
 import {Discount} from "shared/ui/Discount/Discount";
 import {Rating} from "shared/ui/Rating/Rating";
+import {CartButton} from "features/CartButton";
+import {WishButton} from "features/WishButton";
+import {IWishItem} from "entities/WishList/model/types";
 
 interface ProductProps {
-    item: IItem;
-    addToCart: () => void;
-    addToWishlist: () => void;
+    item: IItem | IWishItem;
     className?: string;
     discount?: number;
 }
@@ -17,8 +17,6 @@ interface ProductProps {
 export const Product: FC<ProductProps> = (props) => {
     const {
         item,
-        addToCart,
-        addToWishlist,
         className,
         discount
     } = props;
@@ -28,29 +26,31 @@ export const Product: FC<ProductProps> = (props) => {
 
     return (
         <div className={classNames(cls.Product, {}, [className])}>
-            <div
-                className={cls.productItem}
-                style={{
-                    background: `url(${item.images[0]})`,
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-            }}
-            >
+            <div className={cls.productItem}>
+                <div className={cls.imgHolder}>
+                    {imgUrl && <img src={imgUrl && imgUrl[0]} alt="product image"/>}
+                    {!imgUrl && <div className={cls.noImg}>No image</div>}
+                </div>
                 {discount && <Discount discount={discount}/>}
-                <Button
+                <WishButton
+                    item={{
+                        id: item.id,
+                        images: item.images,
+                        title: item.title,
+                        price: item.price
+                    }}
                     className={cls.wishBtn}
-                    onClick={addToWishlist}
-                    theme={ButtonThemes.ROUND}
-                    types={ButtonTypes.WISHLIST}
                 />
-                <Button
+                <CartButton
+                    item={{
+                        id: item.id,
+                        price: item.price,
+                        images: item.images,
+                        title: item.title,
+                        quantity: 1,
+                    }}
                     className={cls.cartBtn}
-                    onClick={addToCart}
-                    theme={ButtonThemes.BLACK_SQUARE}
-                    types={ButtonTypes.CART}
-                >
-                    Add To Cart
-                </Button>
+                />
             </div>
 
             <div className={cls.productDesc}>

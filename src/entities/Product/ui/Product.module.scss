@@ -14,12 +14,16 @@
   border-radius: 5px;
   cursor: pointer;
 
+  img {
+    width: 100%;
+  }
 
   &:hover {
     .cartBtn {
       transform: translateY(0);
     }
   }
+
 }
 
 .productDesc {
@@ -49,3 +53,12 @@
   text-decoration: line-through;
 }
 
+.noImg {
+  position: absolute;
+  background: global.$gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

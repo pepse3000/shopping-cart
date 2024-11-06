@@ -33,10 +33,6 @@ export const ProductContainer = forwardRef<HTMLDivElement, ProductContainerProps
                         <Product
                             item={product}
                             key={product.id}
-                            addToCart={() => {
-                            }}
-                            addToWishlist={() => {
-                            }}
                             discount={discount}
                         />
                     )
