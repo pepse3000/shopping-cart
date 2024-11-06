@@ -1,0 +1,18 @@
+@use "@/app/styles/variables/mixins";
+@use "@/app/styles/variables/global";
+
+.ErrorPage {
+  @include mixins.default-page;
+
+  font: global.$font-s;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+h1 {
+  font: global.$font-xl;
+  font-size: 72px;
+  font-weight: 500;
+}
