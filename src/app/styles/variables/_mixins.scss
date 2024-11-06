@@ -1,6 +1,15 @@
 @use 'variables';
+@use 'global';
 
 @mixin default-app {
   background: variables.$app-background;
   color: variables.$app-color;
+}
+
+@mixin default-page {
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: global.$min-page-height;
 }

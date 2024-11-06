@@ -3,6 +3,7 @@
 $inter-font-family: "Inter", sans-serif;
 $poppins-font-family: "Poppins", sans-serif;
 
+// fonts
 $font-size-s: 16px;
 $font-line-s: 24px;
 $font-s: #{$font-size-s} / #{$font-line-s} #{$poppins-font-family};
@@ -24,8 +25,13 @@ $font-xl: #{$font-weight-xl} #{$font-size-xl} / #{$font-line-xl} #{$inter-font-f
 // Colors
 $gray: #d5d5d5;
 $red: #DB4444;
+$app-background: #ffffff;
+$app-color: #111111;
+$inverted-app-background: #111111;
+$inverted-app-color: #ffffff;
 
 // sizes
 $navbar-height: 70px;
 $header-height: 30px;
 $footer-height: 400px;
+$min-page-height: calc(100vh - #{$navbar-height} - #{$footer-height} - #{$header-height});
